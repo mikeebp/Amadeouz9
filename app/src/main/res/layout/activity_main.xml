@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.friday.class9.MainActivity"
+    android:id="@+id/padre">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentStart="true"
+        android:id="@+id/animationMain"
+        android:onClick="cambioDeEscena"></RelativeLayout>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Cambio de escena"
+        android:id="@+id/button"
+        android:onClick="cambioDeEscena"
+        android:layout_below="@+id/button2"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sacar boton"
+        android:id="@+id/button2"
+        android:onClick="sacarBoton"
+        android:layout_below="@+id/animationMain"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Escena de camara"
+        android:id="@+id/button3"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:onClick="cambiarActividad" />
+</RelativeLayout>
